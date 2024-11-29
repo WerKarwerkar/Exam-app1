@@ -72,7 +72,7 @@ export const SectionTwo = styled.section`
   text-align: center;
   color: black;
   border: 2px solid black;
-  margin: 350px 0 0 0;
+  margin: 450px 0 0 0;
 
   @media (max-width: 768px) {
     margin: 450px 0 0 0;
