@@ -5,7 +5,7 @@ export const Title = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 20px;
   padding: 20px;
   background-color: transparent;
