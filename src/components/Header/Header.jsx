@@ -40,7 +40,11 @@ function Header() {
               to="#"
               onClick={(e) => {
                 e.preventDefault();
-                navigate("/RentOut/new");
+                if (authState.venueManager) {
+                  navigate("/RentOut/new");
+                } else {
+                  alert("You need to Log In as a manager");
+                }
               }}
               style={{ color: isHomePage ? "white" : "black" }}
             >

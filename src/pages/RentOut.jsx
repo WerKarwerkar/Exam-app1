@@ -130,6 +130,11 @@ function RentAVenuePage() {
   }, [authState, venueId, navigate, setValue, existingVenue]);
 
   const onSubmit = async (inputData) => {
+    if (existingVenue && existingVenue.owner.email != authState.email) {
+      alert("Please log in as a Manager to Rent Out!");
+      navigate("/");
+      return;
+    }
     const transformData = (data) => {
       return {
         name: data.name,
