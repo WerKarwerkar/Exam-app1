@@ -1,0 +1,30 @@
+:root {
+  font-family: Monaco, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: linear-gradient(
+    189.8deg,
+    #1fbcdb -10.03%,
+    #ffffff 13.98%,
+    #1fbcdb 24.2%,
+    #ffffff 39.29%,
+    #1fbcdb 70.15%,
+    #ffffff 95.31%,
+    #1fbcdb 112.99%
+  );
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
