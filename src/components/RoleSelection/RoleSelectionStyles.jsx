@@ -7,7 +7,7 @@ export const Title = styled.div`
   width: 100%;
   margin-top: 30px;
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 20px;
   background-color: transparent;
   border: 2px solid black;
   box-sizing: border-box;
@@ -28,16 +28,23 @@ export const Title = styled.div`
     }
   }
 `;
+export const Container = styled.div`
+  width: 100%;
+  border: 2px solid black;
+  box-sizing: border-box;
+  margin-top: 50px;
+  margin-bottom: 50px;
+`;
 
 export const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 40px;
 `;
 
 export const BackToHomepageLink = styled.div`
   margin-bottom: 20px;
-  margin-top: 20px;
 
   button {
     background-color: transparent;
@@ -93,6 +100,7 @@ export const RoleButton = styled.button`
 
 export const SubmitButton = styled.button`
   margin-top: 20px;
+  margin-bottom: 50px;
   background-color: #e55983;
   color: black;
   font-size: 16px;

@@ -58,7 +58,6 @@ function RentAVenuePage() {
   const { id: venueId } = useParams();
   const [initialValues, setInitialValues] = useState({});
   const [isEdited, setIsEdited] = useState(false);
-  const [currentVenue, setCurrentVenue] = useState(null);
 
   const {
     register,

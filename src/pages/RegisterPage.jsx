@@ -50,12 +50,9 @@ function RegisterPage() {
     try {
       await registerUser(data);
       alert("Registration successful!");
+      navigate("/");
     } catch (error) {
-      alert(
-        `Registration failed: ${
-          error.response?.data?.message || "Please try again."
-        }`
-      );
+      alert(`Registration failed: ${error.message || "Please try again."}`);
     }
   }
 

@@ -6,6 +6,7 @@ import {
   RoleButton,
   SubmitButton,
   Title,
+  Container,
 } from "../components/RoleSelection/RoleSelectionStyles";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../Context/AuthContext";
@@ -32,27 +33,28 @@ function RoleSelection() {
       <Title>
         <h1>SELECT YOUR ROLE</h1>
       </Title>
-
-      <PageContainer>
-        <BackToHomepageLink>
-          <button onClick={() => navigate("/")}>BACK TO THE HOMEPAGE</button>
-        </BackToHomepageLink>
-        <RoleSelectionContainer>
-          <RoleButton
-            selected={selectedRole === "CUSTOMER"}
-            onClick={() => handleRoleSelect("CUSTOMER")}
-          >
-            CUSTOMER
-          </RoleButton>
-          <RoleButton
-            selected={selectedRole === "VENUE MANAGER"}
-            onClick={() => handleRoleSelect("VENUE MANAGER")}
-          >
-            MANAGER
-          </RoleButton>
-        </RoleSelectionContainer>
-        <SubmitButton onClick={handleSubmit}>CONTINUE</SubmitButton>
-      </PageContainer>
+      <Container>
+        <PageContainer>
+          <BackToHomepageLink>
+            <button onClick={() => navigate("/")}>BACK TO THE HOMEPAGE</button>
+          </BackToHomepageLink>
+          <RoleSelectionContainer>
+            <RoleButton
+              selected={selectedRole === "CUSTOMER"}
+              onClick={() => handleRoleSelect("CUSTOMER")}
+            >
+              CUSTOMER
+            </RoleButton>
+            <RoleButton
+              selected={selectedRole === "VENUE MANAGER"}
+              onClick={() => handleRoleSelect("VENUE MANAGER")}
+            >
+              MANAGER
+            </RoleButton>
+          </RoleSelectionContainer>
+          <SubmitButton onClick={handleSubmit}>CONTINUE</SubmitButton>
+        </PageContainer>
+      </Container>
     </>
   );
 }
