@@ -5,6 +5,7 @@ export const Container = styled.div`
   border: 2px solid black;
   box-sizing: border-box;
   margin-top: 50px;
+  margin-bottom: 50px;
 `;
 export const PageContainer = styled.div`
   display: flex;
