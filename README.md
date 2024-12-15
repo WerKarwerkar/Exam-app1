@@ -1,5 +1,7 @@
 ## VistaVenue - Project-Exam-2
 
+<img width="1441" alt="VistaVenue" src="https://github.com/user-attachments/assets/3c51d028-8bc8-4d70-9cca-8b19df692744" />
+
 ### Introduction:
 
 Vistavenue is a web application designed to facilitate short-term apartment rentals. The platform allows users to browse and book apartments, while providing tools for managers to create, update, and delete apartments as needed. This project represents the culmination of two years of learning as a Front-End Development student at Noroff.
